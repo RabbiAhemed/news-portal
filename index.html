@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The News Bee</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+    <!-- Navbar Starts -->
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand mb-4" href="index.html"
+              ><strong>The News Bee</strong></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                </li>
+                
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold" aria-current="page" href="#" id="all-trending-news" onclick="loadAllTrendingNews()"
+                    >Trending News</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold" aria-current="page" href="#" id="all-todays-pick" onclick="loadAllTodaysPickNews()"
+                    >Todays Pick</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fw-bold" aria-current="page" href="blog.html"
+                    >Blogs</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <!-- Navbar Ends -->
+    </header>
+
+    <!-- Spinners Start -->
+    <div class="text-center">
+      <div class="spinner-border text-info d-none" id="spinner" role="status">
+      </div>
+    </div>
+    <!-- Spinners End -->
+<!-- Categories Starts -->
+    <div id="categories-container">
+        
+    </div>
+<!-- Categories Ends -->
+
+<!-- Start Number of Contents Found in a Particular Category -->
+<div id="result-number" class=" mx-auto text-center fw-bold py-2">
+
+</div>
+<!-- End Number of Contents Found in a Particular Category -->
+
+<!-- toggle view section start -->
+
+  <div class="d-none d-flex justify-content-around align-items-center my-2" id="view-section" role="status">
+      <div class="d-flex align-items-center" >
+        <div>
+          <p class="pt-2">Sort By View :</p>
+        </div>
+        
+          <div class="dropdown show ms-1">
+            <a class="btn btn-light text-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Default
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+         
+      </div>
+      <div>
+        <button type="button" class="btn btn-primary" id="todays-pick-button">Today's Pick</button>
+        <button type="button" class="btn btn-outline-primary" id="trending-button">Trending</button>
+
+      </div>
+    
+  </div>
+
+<!-- toggle view section end -->
+
+<!-- Show Category Detail Starts -->
+<div id="category-details-container" class="w-100 mx-auto" style="max-width: 75%;">
+
+</div>
+
+<!-- Category Detail Ends -->
+
+
+
+<!-- Particular Category Details Start -->
+<div id="post-details">
+
+</div>
+
+<!-- Particular Category Details End -->
+<!-- Invisible div -->
+<div id="" class="w-50 mx-auto"></div>
+<!--  -->
+
+<!-- Modal -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="newsDetailModal" tabindex="-1" role="dialog" aria-labelledby="newsDetailModalTitle" aria-hidden="true">
+  <div id="modal" class="modal-dialog modal-dialog-centered" role="document">
+    
+  </div>
+</div>
+
+<!-- Show Todays Pick starts -->
+<div id="todays-pick">
+
+</div>
+<!-- Show Todays Pick Ends -->
+
+<!-- Show Trending starts -->
+<div id="trending">
+
+</div>
+<!-- Show Trending Ends -->
+
+
+<footer id="footer" class="text-center bg-light py-5 d-none w-100" >
+  <h4>© 2022 thenewsbee.netlify.app</h4>
+</footer>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
